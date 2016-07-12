@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="HardcodedText,UselessParent,ContentDescription" >
+
+    <RelativeLayout
+        android:id="@+id/rl_My_title_info"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/my_title_back" >
+
+        <TextView
+            android:id="@+id/tv_my_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:singleLine="true"
+            android:text="我的T-Book"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <com.yanxiaobo.shucheng.v1.ui.CircleImageView
+            android:id="@+id/iv_my_header"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/tv_my_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@null"
+            android:src="@drawable/mickey" />
+
+        <TextView
+            android:id="@+id/tv_my_user_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_my_header"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="思念放狼者"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_my_user_store"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_below="@+id/rl_My_title_info"
+        android:layout_marginTop="40dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <ImageView
+            android:id="@+id/iv_mystore_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/my_store" />
+
+        <TextView
+            android:id="@+id/tv_mystore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:paddingBottom="10dp"
+            android:text="我收藏的商品"
+            android:textColor="#909090"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_devider"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignLeft="@+id/tv_mystore"
+            android:layout_below="@+id/tv_mystore"
+            android:background="#909090" />
+    </RelativeLayout>
+    
+    
+    <RelativeLayout
+        android:id="@+id/rl_my_user_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_below="@+id/rl_my_user_store"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <ImageView
+            android:id="@+id/iv_myaddress_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/my_address"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/tv_myaddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:paddingBottom="10dp"
+            android:text="我的地址管理"
+            android:textColor="#909090"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_devider2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignLeft="@+id/tv_myaddress"
+            android:layout_below="@+id/tv_myaddress"
+            android:background="#909090" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rl_my_user_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_below="@+id/rl_my_user_address"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <ImageView
+            android:id="@+id/iv_myorder_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/my_order"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/tv_myorder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:paddingBottom="10dp"
+            android:text="我的定单"
+            android:textColor="#909090"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_devider3"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignLeft="@+id/tv_myorder"
+            android:layout_below="@+id/tv_myorder"
+            android:background="#909090" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rl_my_user_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_below="@+id/rl_my_user_order"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <ImageView
+            android:id="@+id/iv_mysetting_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/my_setting"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/tv_mysetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:paddingBottom="10dp"
+            android:text="我的设置"
+            android:textColor="#909090"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_devider4"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignLeft="@+id/tv_mysetting"
+            android:layout_below="@+id/tv_mysetting"
+            android:background="#909090" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rl_my_user_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_below="@+id/rl_my_user_setting"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <ImageView
+            android:id="@+id/iv_myexit_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/my_exit"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/tv_myexit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:paddingBottom="10dp"
+            android:text="退出登录"
+            android:textColor="#909090"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_devider5"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignLeft="@+id/tv_myexit"
+            android:layout_below="@+id/tv_myexit"
+            android:background="#909090" />
+    </RelativeLayout>
+
+</RelativeLayout>

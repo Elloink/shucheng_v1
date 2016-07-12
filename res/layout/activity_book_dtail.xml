@@ -1,0 +1,222 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookDtailActivity"
+    tools:ignore="HardcodedText,ContentDescription,NestedWeights" >
+
+    <TextView
+        android:id="@+id/tv_bookdtail_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/top"
+        android:gravity="center"
+        android:text="详情介绍"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_bookdtail_pictures"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_below="@+id/tv_bookdtail_title" >
+
+        <ImageView
+            android:id="@+id/iv_bookdtail_bacpic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/big" />
+
+        <ImageView
+            android:id="@+id/iv_bookdtail_fropic"
+            android:layout_width="77dp"
+            android:layout_height="110dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/small" />
+
+        <LinearLayout
+            android:id="@+id/ll_bookdtail_textmessage"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_alignTop="@+id/iv_bookdtail_fropic"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/iv_bookdtail_fropic"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_textmessage_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="花千骨"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_textmessage_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="56￥"
+                    android:textColor="#ff0000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_textmessage_store"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/store_background"
+                    android:gravity="center"
+                    android:text="收藏"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_textmessage_author1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="作者："
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_textmessage_author2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="果果"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_textmessage_type1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="类型："
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_textmessage_type2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="仙侠言情"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_textmessage_publish1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="出版时间："
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_textmessage_publish2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2015/09"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_textmessage_publishing1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="出版社："
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_textmessage_publishing2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="人民出版社"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView 
+        android:id="@+id/tv_bookdtail_descripe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="内容简介"
+        android:gravity="center_vertical"
+        android:background="@drawable/content_discrip"
+        android:layout_below="@+id/rl_bookdtail_pictures"
+        android:paddingLeft="10dp"
+        android:textColor="#6a6a6a"
+        />
+    <ScrollView 
+        android:id="@+id/sv_bookdtail_content_dtail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_bookdtail_descripe"
+        android:layout_above="@+id/bt_addto_car"
+        android:layout_marginBottom="10dp"
+        >
+        <TextView 
+            android:id="@+id/tv_content_textdtail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="她是世间最后一个神，也是百年难得一见的天煞孤星，天生无泪。早期为长留上仙白子画的徒弟，后来经过一系列的转折后突破封印成为妖神，最终设计白子画将自己杀死，将咒白子画活在失去自己的痛苦中。在其死后由竹染用自己的生命换回其一魂，再由杀阡陌助其投胎转世，而后被寻其两百年的白子画重新收为徒弟。她是世间最后一个神，也是百年难得一见的天煞孤星，天生无泪。早期为长留上仙白子画的徒弟，后来经过一系列的转折后突破封印成为妖神，最终设计白子画将自己杀死，将咒白子画活在失去自己的痛苦中。在其死后由竹染用自己的生命换回其一魂，再由杀阡陌助其投胎转世，而后被寻其两百年的白子画重新收为徒弟。她是世间最后一个神，也是百年难得一见的天煞孤星，天生无泪。早期为长留上仙白子画的徒弟，后来经过一系列的转折后突破封印成为妖神，最终设计白子画将自己杀死，将咒白子画活在失去自己的痛苦中。在其死后由竹染用自己的生命换回其一魂，再由杀阡陌助其投胎转世，而后被寻其两百年的白子画重新收为徒弟。她是世间最后一个神，也是百年难得一见的天煞孤星，天生无泪。早期为长留上仙白子画的徒弟，后来经过一系列的转折后突破封印成为妖神，最终设计白子画将自己杀死，将咒白子画活在失去自己的痛苦中。在其死后由竹染用自己的生命换回其一魂，再由杀阡陌助其投胎转世，而后被寻其两百年的白子画重新收为徒弟。她是世间最后一个神，也是百年难得一见的天煞孤星，天生无泪。早期为长留上仙白子画的徒弟，后来经过一系列的转折后突破封印成为妖神，最终设计白子画将自己杀死，将咒白子画活在失去自己的痛苦中。在其死后由竹染用自己的生命换回其一魂，再由杀阡陌助其投胎转世，而后被寻其两百年的白子画重新收为徒弟。她是世间最后一个神，也是百年难得一见的天煞孤星，天生无泪。早期为长留上仙白子画的徒弟，后来经过一系列的转折后突破封印成为妖神，最终设计白子画将自己杀死，将咒白子画活在失去自己的痛苦中。在其死后由竹染用自己的生命换回其一魂，再由杀阡陌助其投胎转世，而后被寻其两百年的白子画重新收为徒弟。她是世间最后一个神，也是百年难得一见的天煞孤星，天生无泪。早期为长留上仙白子画的徒弟，后来经过一系列的转折后突破封印成为妖神，最终设计白子画将自己杀死，将咒白子画活在失去自己的痛苦中。在其死后由竹染用自己的生命换回其一魂，再由杀阡陌助其投胎转世，而后被寻其两百年的白子画重新收为徒弟。"
+            android:textSize="12sp"
+            android:textColor="#727272"
+            android:padding="10dp"
+            />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/bt_addto_car"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button"
+        android:text="购物车"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+</RelativeLayout>

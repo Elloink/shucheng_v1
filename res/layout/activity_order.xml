@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderActivity"
+    tools:ignore="HardcodedText" >
+
+    <TextView
+        android:id="@+id/tv_order_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/top"
+        android:gravity="center"
+        android:text="订单确认"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_order_devide1"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/tv_order_title"
+        android:background="#c0c0c0" />
+
+    <LinearLayout
+        android:id="@+id/ll_address_info"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_order_devide1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <ImageView
+            android:id="@+id/iv_address_info_position"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:contentDescription="@null"
+            android:src="@drawable/order_ico_position" />
+
+        <TextView
+            android:id="@+id/tv_address_info_fulladdrss"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textColor="#909090"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/iv_address_info_changeadd"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:contentDescription="@null"
+            android:src="@drawable/order_ico_rightpointer" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_order_devide2"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/ll_address_info"
+        android:background="#c0c0c0" />
+
+    <TextView
+        android:id="@+id/tv_order_cart"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tv_order_devide2"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="购物车"
+        android:textColor="#909090"
+        android:textSize="16sp" />
+
+    <ListView
+        android:id="@+id/lv_order_cart_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_order_devide3"
+        android:layout_below="@+id/tv_order_cart"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/tv_order_devide3"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_above="@+id/rl_order_bottom_info"
+        android:background="#c0c0c0" />
+
+    <RelativeLayout
+        android:id="@+id/rl_order_bottom_info"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true" >
+
+        <TextView
+            android:id="@+id/tv_bottom_info_total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="共1件，总金额：￥180.00"
+            android:textColor="#909090"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/bt_order_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="#ff0000"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="提交订单"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

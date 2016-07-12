@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText,ContentDescription,NestedScrolling,ScrollViewSize" >
+
+    <RelativeLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:id="@+id/rl_book_store_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/top"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+
+        <EditText
+            android:id="@+id/et_book_store_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tv_book_store_sort"
+            android:background="@drawable/edittext_background"
+            android:hint="请输入关键字"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:textSize="14sp" 
+            />
+
+        <TextView
+            android:id="@+id/tv_book_store_sort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/et_book_store_search"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/iv_book_store_spinner"
+            android:text="分类"
+            android:textColor="#ffffff" />
+
+        <ImageView
+            android:id="@+id/iv_book_store_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_book_store_sort"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/down" />
+
+        <ImageView
+            android:id="@+id/iv_book_store_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           	android:layout_toLeftOf="@+id/tv_book_store_sort"
+           	android:layout_marginRight="20dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/search_icon" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/sv_all_books"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/ll_sort_books"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rl1_bs_recommend"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" >
+
+                <TextView
+                    android:id="@+id/tv_rl1_edittor_recommend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="3dp"
+                    android:text="编辑推荐"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_rl1_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="3dp"
+                    android:text="更多"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <GridView
+                android:id="@+id/gv_edittor_recommend"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:horizontalSpacing="3dp"
+                android:numColumns="4" >
+            </GridView>
+
+            <RelativeLayout
+                android:id="@+id/rl2_hot_books"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" 
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:id="@+id/tv_rl2_hotbook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="3dp"
+                    android:text="热销图书"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_rl2_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="3dp"
+                    android:text="更多"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <GridView
+                android:id="@+id/gv_hot_books"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:horizontalSpacing="3dp"
+                android:numColumns="4" >
+            </GridView>
+
+            <RelativeLayout
+                android:id="@+id/rl3_new_books"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="30dp" >
+
+                <TextView
+                    android:id="@+id/tv_rl3_newbook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="3dp"
+                    android:text="新书上架"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_rl3_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="3dp"
+                    android:text="更多"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <GridView
+                android:id="@+id/gv_new_books"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:horizontalSpacing="3dp"
+                android:numColumns="4" >
+            </GridView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

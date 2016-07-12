@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="HardcodedText,UselessParent" >
+
+    <RelativeLayout
+        android:id="@+id/rl_address_list_format"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/address_list_fomat_back"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/tv_receive_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="雯雯"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+        
+        <TextView 
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13591998051"
+            android:textSize="12sp"
+            android:textColor="#ffffff"
+			android:layout_toRightOf="@+id/tv_receive_name"
+			android:layout_marginLeft="30dp"
+            />
+        <TextView 
+            android:id="@+id/tv_full_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_receive_name"
+            android:layout_marginTop="5dp"
+            android:text="河南省辉县市北云门镇冯庄村中心路南25号"
+            android:textSize="12sp"
+            android:textColor="#ffffff"
+            />
+        <TextView 
+            android:id="@+id/tv_address_devide"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@drawable/address_devide"
+            android:layout_below="@+id/tv_full_address"
+            android:layout_marginTop="5dp"
+            />
+       <RelativeLayout 
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/tv_address_devide"
+           android:layout_marginTop="5dp"
+           >
+            <RadioButton 
+            android:id="@+id/rb_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="默认"
+            android:textSize="12sp"
+            android:textColor="#ffffff"
+            android:button="@null"
+            android:drawableLeft="@drawable/radiobutton_back_selector"
+            android:drawablePadding="5dp"
+            />
+        <RadioButton 
+            android:id="@+id/rb_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="编辑"
+            android:textSize="12sp"
+            android:textColor="#ffffff"
+            android:button="@null"
+            android:drawableLeft="@drawable/radiobutton_edit"
+            android:drawablePadding="5dp"
+            android:layout_toRightOf="@+id/rb_default"
+            android:layout_alignBottom="@+id/rb_default"
+            android:layout_marginLeft="30dp"
+            />
+        <RadioButton 
+            android:id="@+id/rb_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="删除"
+            android:textSize="12sp"
+            android:textColor="#ffffff"
+            android:button="@null"
+            android:drawableLeft="@drawable/radiobutton_delete"
+            android:drawablePadding="5dp"
+			android:layout_toRightOf="@+id/rb_edit"
+			android:layout_alignBottom="@+id/rb_edit"
+			android:layout_marginLeft="30dp"
+           
+            />
+           
+           
+       </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
